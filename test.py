@@ -1,14 +1,15 @@
-"""
-Unit tests for the calculator library
-"""
-
+import unittest
 import calculator
 
 
-class TestCalculator:
+class TestCalculator(unittest.TestCase):
 
     def test_addition(self):
         assert 4 == calculator.add(2, 2)
 
     def test_subtraction(self):
         assert 0 == calculator.subtract(4, 4)
+
+
+if __name__ == '__main__':
+    unittest.main()
